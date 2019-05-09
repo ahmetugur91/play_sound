@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.1.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<button id="button1" onmousedown="playSound(this, 'guitar.mp3');" onmouseout="stopSound()">Play</button>
+<script>
+
+
+    var element;
+
+    function stopSound() {
+        element.mp3.pause();
+        // return to start
+        // element.mp3.currentTime = 0;
+    }
+
+
+    function playSound(el,soundfile) {
+        element = el;
+        if (element.mp3) {
+            if(element.mp3.paused) element.mp3.play();
+            else element.mp3.pause();
+        } else {
+            element.mp3 = new Audio(soundfile);
+            element.mp3.play();
+        }
+    }
+
+
+</script>
+</body>
+</html>
