@@ -5,13 +5,13 @@ function playSound(el, soundfile) {
 
     var element = el;
 
-    $(element).find("img").animate({ 'zoom': 1.2}, 400);
+    //$(element).find("img").animate({ 'zoom': 1.2}, 400);
     $(element).find("img").addClass("redCircle");
     $(".buttons").find("img").not($(el).find("img")).addClass("blur");
 
     element.mp3 = new Audio(soundfile);
     element.mp3.onended = function() {
-        $(element).find("img").animate({ 'zoom': 1 }, 400);
+        //$(element).find("img").animate({ 'zoom': 1 }, 400);
         $(element).find("img").removeClass("redCircle");
         $(".buttons").find("img").removeClass("blur");
         isPlaying = false;
