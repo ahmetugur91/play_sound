@@ -55,3 +55,9 @@ body {
     margin-bottom: 10%;
 }
 
+.redCircle {
+    -webkit-filter: drop-shadow(2px 1px 0 red)
+    drop-shadow(-1px -1px 0 red);
+    filter: drop-shadow(2px 1px 0 red)
+    drop-shadow(-1px -1px 0 red);
+}
