@@ -56,10 +56,10 @@ body {
 }
 
 .redCircle {
-    -webkit-filter: drop-shadow(2px 1px 0 #909090)
-    drop-shadow(-1px -1px 0 #909090);
-    filter: drop-shadow(2px 1px 0 #909090)
-    drop-shadow(-1px -1px 0 #909090);
+    -webkit-filter: drop-shadow(5px 5px 0 #909090)
+    drop-shadow(-3px -3px 0 #909090);
+    filter: drop-shadow(3px 3px 0 #909090)
+    drop-shadow(-3px -3px 0 #909090);
 }
 
 .blur{
