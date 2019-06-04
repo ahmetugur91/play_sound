@@ -55,11 +55,27 @@ body {
     margin-bottom: 10%;
 }
 
+/*
 .redCircle {
-    -webkit-filter: drop-shadow(5px 5px 0 #909090)
+    -webkit-filter: drop-shadow(3px 3px 3px #909090)
     drop-shadow(-3px -3px 0 #909090);
     filter: drop-shadow(3px 3px 0 #909090)
-    drop-shadow(-3px -3px 0 #909090);
+    drop-shadow(-3px -3px -3px #909090);
+}
+*/
+
+.redCircle{
+    /*background-image:url("yourImage.png");*/
+
+    border-radius:50%;
+    border:5px solid #909090;
+    box-shadow:0 0 10px #909090;
+}
+
+.redCircle:after{
+    content:"";
+    padding-bottom:100%;
+    display:block;
 }
 
 .blur{

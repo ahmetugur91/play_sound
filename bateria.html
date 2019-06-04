@@ -7,8 +7,98 @@
     <script src="js/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css?v=2">
+
     <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: 'TitilliumWeb-SemiBold copia';
+            src: url('../fonts/TitilliumWeb-SemiBold copia.ttf');
+        }
+
+
+        body {
+            background: url("../images/background.png");
+            background-size: cover;
+            -webkit-background-origin: border;
+        }
+
+        .area {
+            max-width: 1080px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .title {
+            padding-top: 30px;
+        }
+
+        .title div {
+            font-family: 'TitilliumWeb-SemiBold copia', Fallback, sans-serif;
+            color: #004B9B;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .title .bar {
+            max-width: 295px;
+            margin: auto;
+            background: url("../images/bar1.png");
+            background-repeat: no-repeat;
+            background-size: 100% 10px;
+            margin-top: -15px;
+        }
+
+        .buttons {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .buttons img {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+
+        /*
+        .redCircle {
+            -webkit-filter: drop-shadow(3px 3px 3px #909090)
+            drop-shadow(-3px -3px 0 #909090);
+            filter: drop-shadow(3px 3px 0 #909090)
+            drop-shadow(-3px -3px -3px #909090);
+        }
+        */
+
+        .redCircle{
+            /*background-image:url("yourImage.png");*/
+
+            -webkit-appearance: none;
+            -webkit-box-shadow: 0 0 10px #909090;
+            border-radius:50%;
+            border:5px solid #909090;
+            box-shadow:0 0 10px #909090;
+        }
+
+        .redCircle:after{
+            content:"";
+            padding-bottom:100%;
+            display:block;
+        }
+
+        .blur{
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+        }
+
+    </style>
 </head>
 <body>
 <div class="area">
@@ -56,6 +146,6 @@
         </div>
     </div>
 </div>
-<script src="js/sound.js"></script>
+<script src="js/sound.js?v=2"></script>
 </body>
 </html>
