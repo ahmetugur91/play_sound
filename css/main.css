@@ -67,6 +67,8 @@ body {
 .redCircle{
     /*background-image:url("yourImage.png");*/
 
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 0 10px #909090;
     border-radius:50%;
     border:5px solid #909090;
     box-shadow:0 0 10px #909090;
